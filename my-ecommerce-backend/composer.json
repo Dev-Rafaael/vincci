@@ -1,0 +1,18 @@
+{
+    "name": "devrafael/myecommercebackend",
+    "description": "Backend for my e-commerce project",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Devrafael\\Myecommercebackend\\": "scr/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rafael Moraes",
+            "email": "DevRafaael@gmail.com"
+        }
+    ],
+    "require": {}
+}
