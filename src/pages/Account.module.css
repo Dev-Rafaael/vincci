@@ -1,0 +1,350 @@
+
+.navAccount{
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navAccount h1{
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  letter-spacing: -2px;
+   font-style:italic;
+  color: rgb(146, 117, 60);
+}
+.navAccount h2{
+  margin-top: 5rem;
+  font-size: 4rem;
+  letter-spacing: -2px;
+   font-style:italic;
+  color: rgb(146, 117, 60);
+}
+.mainAccount{
+  background-color: #070707;
+  background-position:center;
+  background-size: cover;
+} 
+.accountTitle h1{
+  width: 85%;
+ font-size: 2rem;
+ color:  rgb(146, 117, 60);
+  font-family:cursive;
+ margin:  1rem auto;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: transparent;
+  width: 10%;
+  gap: 0.5rem;
+
+}
+.btnCadastrar{
+  width: 100%;
+  background-color: #858181;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 0.7rem;
+ opacity: 0.9;
+}
+.btnCadastrar:hover{
+
+ opacity: 1;
+}
+.btnLogar{
+  width: 100%;
+  background-color:rgb(146, 117, 60);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 0.7rem;
+ opacity: 0.9;
+}
+.btnLogar:hover{
+
+ opacity: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.accountTitle span{
+  width: 2rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: 0.5rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+}
+.accountSection{
+  display: flex;
+  width: 100%; 
+  height: 30%;
+ justify-content: center;
+ align-items: center;
+ padding: 1rem 0;
+ gap: 1rem;
+}
+.accountAside{
+  background-color: rgb(35, 34, 34);
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.6rem;
+}
+.accountAside img{
+  height: 10rem;
+  width: 11rem;
+  border-radius: 50%;
+  margin: 2rem 0 1rem;
+  background-color: white;
+}
+.accountAside h1{
+  color: rgb(146, 117, 60);
+  font-size: 1.3rem;
+  font-weight: 700;
+ font-style: italic;
+  text-transform: uppercase;
+}
+.accountAside p{
+  color: rgb(178, 178, 180);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.infoSection{
+  background-color: rgb(35, 34, 34);
+  width: 40%;
+  border-radius: 0.7rem;
+}
+
+.infoArticle{
+  width: 85%;
+  height: 100%;
+  margin: 0 auto ;
+  padding-bottom: 2rem;
+}
+.infoArticle h2{
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(146, 117, 60);
+  font-style: italic;
+  margin-top: 1rem;
+}
+.contentInfo {
+  width: 100%;
+  display: flex;
+  margin: 0.93rem 0;                          
+  align-items: center;            
+ justify-content: space-between;             
+}
+
+
+
+.btn {
+  width: 3rem;         
+  font-size: 1.2rem;              
+  text-decoration: none;           
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 0.7rem ;
+  text-decoration: none;
+  border-radius: 5px;                   
+}
+.btnDelete {
+  width: 3rem;
+  font-size: 1.2rem;              
+  text-decoration: none;           
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 0.7rem ;
+  text-decoration: none;
+  border-radius: 5px;                   
+}
+
+
+
+
+
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Opcional, garante que ocupem a largura total */
+  margin-bottom: 8px; /* Opcional, para espaçamento entre linhas */
+  border-bottom: 1px solid rgb(117, 117, 114);
+}
+.flexRow:last-child {
+  border: none;
+}
+
+dd{
+  padding: 0.2rem 0;
+  color: rgb(146, 117, 60);
+  font-weight: 700;   
+}
+dt{
+  color: rgb(177, 169, 169);
+  font-weight: 700;
+}
+dl{
+  margin-bottom: 0;
+}
+.btnLogout {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: rgb(44, 43, 43);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  
+}
+.modalContent h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(146, 117, 60);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.modalContent p{
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(210, 207, 200);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.modalContent input{
+  width: 99%;
+  margin: 0 auto;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: rgb(146, 117, 60);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.formGroup input,select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.closeButton, .saveButton {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.closeButton{
+  background-color: rgb(110, 108, 108);
+}
+ /* MODAIS */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+
+.modalContent {
+  background: rgb(43, 42, 42);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px; /* Largura do modal */
+  max-width: 100%; /* Responsivo */
+}
+.modalContent h2{
+  text-align: center;
+  color:rgb(146, 117, 60);
+  font-weight: 700;
+  font-style: italic;
+}
+.modalMessageContent{
+  width: 30rem;
+  height: 8rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  background-color: rgb(30, 29, 29);
+  background-position:center;
+  background-size: cover;
+  border-radius: 10px;
+  z-index: 1000;
+  color:rgb(146, 117, 60); 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}

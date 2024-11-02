@@ -1,0 +1,29 @@
+/* Spinner.css */
+.spinnerContainer {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa a altura total da tela */
+  background: transparent; /* Fundo levemente transparente */
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #908043; /* Cor do lado que gira */
+  border-radius: 50%;
+  width: 50px; /* Tamanho do spinner */
+  height: 50px; /* Tamanho do spinner */
+  animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

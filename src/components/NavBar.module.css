@@ -1,0 +1,703 @@
+body,html{
+  overflow-x:unset;  
+  }
+.content{
+  position: absolute;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 11%;
+  background-color: transparent;
+  padding: 0rem;
+
+ 
+}
+  .logo{
+    display: flex;
+    gap: 1rem;
+  }
+.logo h1{
+  font-size: 1rem;
+  letter-spacing: 4px;
+  color: rgb(183, 143, 63) ;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+}
+.logo img{
+margin-bottom: 1.1rem;
+}
+.content img{
+  width: 4rem;
+  height: 3.5rem;
+ margin-top: 1rem;
+  border-radius: 100%;
+}
+.navbarContent{
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 4rem;
+align-items: center;
+position: relative;
+top: 0;
+z-index: 1000;
+margin-right: 11rem;
+}
+
+.navItens ul {
+  display: flex;
+   list-style: none;
+  gap: 35px;
+  align-items: center;
+}
+.navItens li {
+  font-size: 17px;
+  position: relative;
+  padding: 0.4rem 0;
+  
+}
+.navItens  a{
+  color: white;
+}
+.logoImg:hover{
+  border-bottom: none;
+}
+.navItens li:before{
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 3px solid  rgb(183, 143, 63);
+  position: absolute; 
+  transition: all 1s ease;
+}
+.navItens li:hover:before{
+  width: 100%;
+  background-color: transparent;
+}
+.navItens img:hover:before{
+  border-bottom: none;
+  background-color: transparent;
+}
+
+
+.servicos{
+  display: flex;
+  gap: 1rem;
+  
+}
+.navItens i{
+  font-size: 1.3rem;
+  color: aliceblue;
+}
+/* .servicos,.navItens,i{
+  font-size: 1.3rem;
+  color: aliceblue;
+} */
+/* Estilo para o modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.47); 
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 999; 
+}
+
+.modalContent {
+  background-color: rgba(8, 8, 8, 0.736);
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: 80%;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+.modalContent h2{
+  color: rgb(183, 143, 63);
+}
+
+.closeButton {
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  display: flex;
+  justify-content: end;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(183, 143, 63);
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(202, 194, 194);
+  border: 1px solid #101010;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  color: rgb(24, 23, 23);
+  font-weight: 700;
+}
+
+.searchResults ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 1rem;
+  
+}
+.searchResults img{
+  margin-top: 0;
+  width: 100%;
+  height: 10rem;
+  border-radius:  0.3rem;
+}
+.searchResults img:hover{
+  transform: translateY(-5px);
+}
+
+.pacotesType{
+  height: 80%;
+  width: 75%;
+  border-radius:  0.7rem;
+ text-align: center;
+ margin: 3rem 1rem;
+ border: 1px solid transparent;
+ background-color: rgba(22, 22, 22, 0.862);
+ box-shadow: 10px 10px 10px rgba(118, 123, 58, 0.661);;
+}
+.pacotesType h2{
+  font-size: 1rem;
+  color: rgb(183, 143, 63);
+  width: 90%;
+  margin: 0.4rem auto;
+}
+.pacotesType p{
+font-size: 0.7rem;
+font-weight: bold;
+color: rgb(224, 218, 218);
+margin: 0.4rem 0 0.3rem 0;
+}
+.pacotesPreco{
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.2rem;
+}
+
+.pacotesPreco p:last-child {
+  font-size: 0.9rem;
+  color: rgb(183, 143, 63);
+  letter-spacing: -1px;
+}
+.pacotesType a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pacotesType a:first-of-type {
+ border: 1px solid transparent;
+ color: black;
+ background-color:  rgb(204, 142, 18);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+    opacity: 0.8;
+  transition: 0.4s;
+  width: 11rem;
+  margin: 0 auto 1rem;
+}
+.pacotesType a:first-of-type:hover{
+opacity: 1;
+
+}
+.pacotesType a:last-child{
+  color: rgb(41, 39, 39);
+  font-weight: bold;
+  transition: 0.7s;
+  letter-spacing: -1px;
+}
+.pacotesType a:last-child:hover{
+  color: rgb(53, 53, 53);
+}
+.clearButton {
+  position: absolute;
+  top: 4.5rem;
+  right: 2rem;
+  display: flex;
+  justify-content: end;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #434040;
+  font-size: 16px;
+}
+
+.clearButton:hover {
+  color: #333;
+  background-color: transparent;
+}
+
+.vazioSearch{
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+   font-style:italic;
+  color: rgb(146, 117, 60);
+}/* NavBar.module.css */
+
+
+
+
+
+/* Estilo padrão para o menu hambúrguer */
+.hamburgerMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  /* Container geral da navbar */
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* Ajuste da barra de navegação */
+  .navbarContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+    position: relative;
+    top: 0;
+    z-index: 999;
+  }
+
+  /* Centraliza a logo */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo span{
+    height: 4rem;
+  }
+  /* Estilo dos itens de navegação */
+  .navItens {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    background-color: rgb(26, 24, 24);
+    height: 100vh;
+    z-index: 10;
+    display: none; /* Esconde o menu inicialmente */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+  }
+
+  /* Itens dentro do menu */
+  .navItens ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Quando o menu estiver aberto */
+  .navItens.open {
+    display: flex; /* Exibe o menu */
+  }
+
+  /* Ícone de menu hambúrguer visível no responsivo */
+  .hamburgerMenu {
+    display: block;
+    position: absolute;
+    left: 1rem; /* Alinha o hambúrguer à esquerda */
+    top: 0rem;
+  }
+
+  /* Esconde a logo na versão responsiva, se necessário */
+  .logoImg {
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 991px){ 
+  .logo{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-top: 0.7rem;
+    text-align: center;
+  }
+ 
+  .content img{
+    width: 4rem;
+    height: 3.5rem;
+   margin: 1rem 0 0.5rem;
+    border-radius: 100%;
+  }
+  .navbarContent{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  margin-right: 1rem;
+  }
+  
+  .navItens ul {
+    display: flex;
+     list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+  }
+  .navItens ul a{
+   margin-bottom: 1rem;
+  }
+  .navItens li{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1199px){ 
+  .logo{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-top: 0.7rem;
+    text-align: center;
+  }
+ 
+  .content img{
+    width: 4rem;
+    height: 3.5rem;
+   margin: 1rem 0 0.5rem;
+    border-radius: 100%;
+  }
+  .navbarContent{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  margin-right: 1rem;
+  }
+  
+  .navItens ul {
+    display: flex;
+     list-style: none;
+    gap: 35px;
+    align-items: center;
+    margin: 0;
+  }
+  .navItens ul a{
+   margin-bottom: 1rem;
+    
+  }
+
+}
+
+/* BARRA PESQUISA */
+
+@media (max-width:480px){
+  /* SEARCH  */
+.modalOverlay{
+  height: 100%;
+}
+.searchResults{
+  height: 100%;
+  overflow-y: auto;
+  
+}
+
+.searchResults ul{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  padding-left: 0;
+}
+.pacotesType{
+  height: 100%;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: none;
+}
+.clearButton {
+  top: 4.1rem;
+
+
+}
+
+
+.vazioSearch{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+}
+
+@media (min-width:481px) and (max-width:660px){
+  /* SEARCH  */
+.modalOverlay{
+  height: 100%;
+}
+.modalContent h2{
+  color: rgb(183, 143, 63);
+  font-size: 2.1rem;
+}
+.searchResults{
+  height: 100%;
+  overflow-y: auto;
+  
+}
+
+.searchResults img{
+  margin-top: 0;
+  width: 100%;
+  height: 14rem;
+  border-radius:  0.3rem;
+}
+.searchResults img:hover{
+  transform: translateY(-5px);
+}
+
+.pacotesType h2{
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+  color: rgb(217, 220, 222);
+}
+.pacotesType p{
+font-size: 1rem;
+font-weight: bold;
+color: rgb(224, 218, 218);
+margin: 0.4rem 0 0.3rem 0;
+}
+.pacotesPreco{
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.2rem;
+}
+
+.pacotesPreco p:last-child {
+  font-size: 1.1rem;
+  color: rgb(183, 143, 63);
+  letter-spacing: -1px;
+}
+.pacotesType a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchResults ul{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  padding-left: 0;
+}
+.pacotesType{
+  height: 100%;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: none;
+}
+.clearButton {
+  top: 4.7rem;
+
+
+}
+
+.vazioSearch{
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+}
+@media (min-width:661px) and (max-width:991px){
+  .searchResults img{
+    margin-top: 0;
+    width: 100%;
+    height: 9rem;
+    border-radius:  0.3rem;
+  }
+  .searchResults img:hover{
+    transform: translateY(-5px);
+  }
+ .searchResults ul{
+    padding: 0;
+  }
+.pacotesType{
+  height: 100%;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: none;
+}
+.clearButton {
+  top: 4.4rem;
+}
+.vazioSearch{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+}
+@media (min-width:661px) and (max-width:720px){
+  .pacotesType:first-child {
+    padding-bottom: 1.2rem;
+    
+    }
+
+}
+@media (min-width:992px) and (max-width:1199px){
+  .modalContent h2{
+    font-size: 2.1rem;
+  }
+  .searchResults img{
+    margin-top: 0;
+    width: 100%;
+    height: 9rem;
+    border-radius:  0.3rem;
+  }
+  .searchResults img:hover{
+    transform: translateY(-5px);
+  }
+ .searchResults ul{
+    padding: 0;
+  }
+  .searchInput {
+    font-size: 1.3rem;
+  }
+.pacotesType{
+  height: 100%;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: none;
+}
+
+.pacotesType h2{
+  font-size: 1.1rem;
+  color: rgb(183, 143, 63);
+  width: 90%;
+  margin: 0.4rem auto;
+}
+.pacotesType p{
+font-size: 0.8rem;
+font-weight: bold;
+color: rgb(224, 218, 218);
+margin: 0.4rem 0 0.3rem 0;
+}
+.pacotesPreco p:last-child {
+  font-size: 1rem;
+}
+.clearButton {
+  top: 4.9rem;
+}
+.vazioSearch{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+}
+@media (min-width:1200px) and (max-width:1440px) {
+  .modalContent h2{
+    font-size: 2.6rem;
+  }
+  .searchResults img{
+    margin-top: 0;
+    width: 100%;
+    height: 14rem;
+    border-radius:  0.3rem;
+  }
+  .searchResults img:hover{
+    transform: translateY(-5px);
+  }
+ .searchResults ul{
+    padding: 0;
+  }
+  .searchInput {
+    font-size: 1.4rem;
+  }
+.pacotesType{
+  height: 100%;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: none;
+}
+
+.pacotesType h2{
+  font-size: 1.3rem;
+  color: rgb(183, 143, 63);
+  width: 90%;
+  margin: 0.4rem auto;
+}
+.pacotesType p{
+font-size: 1rem;
+font-weight: bold;
+color: rgb(224, 218, 218);
+margin: 0.4rem 0 0.3rem 0;
+}
+.pacotesPreco p:last-child {
+  font-size: 1.1rem;
+}
+.pacotesType a:first-of-type {
+  border: 1px solid transparent;
+  color: black;
+  background-color:  rgb(204, 142, 18);
+   padding: 0.8rem;
+   border-radius: 0.8rem;
+     opacity: 0.8;
+   transition: 0.4s;
+   width: 60%;
+   margin: 0 auto 1rem;
+ }
+.clearButton {
+  top: 5.6rem;
+}
+.vazioSearch{
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+}

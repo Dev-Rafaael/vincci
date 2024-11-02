@@ -1,0 +1,473 @@
+/* CookieConsent.module.css */
+.banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.link {
+  color: rgb(183, 143, 63);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.acceptButton {
+  width: 14.6rem;
+  height: 4rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.acceptButton:hover {
+  background-color: #4CAF50;
+  opacity: 1;
+}
+
+.settingsButton {
+  width: 14.6rem;
+  height: 4rem;
+  background-color: #f44336;
+  color: white;
+  padding: 0rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.settingsButton:hover { 
+  background-color: #f44336;
+  opacity:1;
+}
+.settingsModal {
+  width: 45rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #282c34;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2000; /* Mais alto que o banner */
+  border-radius: 1rem;
+}
+
+.inputCheck{
+  display: flex;
+  width: 100%;
+}
+.inputCheck label{
+  width: 40%;
+}
+.inputCheck input{
+  height:1.1rem ;
+}
+.settingsModal h3{
+  color: rgb(183, 143, 63);
+}
+ .closeButton {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.saveButton{
+  margin-top: 10px;
+  opacity: 0.8;
+}
+ .closeButton:hover {
+  margin-top: 10px;
+  background-color: rgb(183, 143, 63) ;
+  opacity: 1;
+}
+ .saveButton:hover {
+  margin-top: 10px;
+  background-color: rgb(183, 143, 63) ;
+  opacity: 1;
+}
+@media (max-width:480px){
+  .banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text {
+
+    margin: 0;
+    padding: 0rem;
+    font-size: 0.9rem;
+  }
+  
+  
+  .acceptButton {
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  .acceptButton:hover {
+    background-color: #4CAF50;
+    opacity: 1;
+  }
+  
+  .settingsButton {
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #f44336;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  .settingsButton:hover { 
+    background-color: #f44336;
+    opacity:1;
+  }
+  .settingsModal {
+    width: 95%;
+    font-size: 0.9rem;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #282c34;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2000; /* Mais alto que o banner */
+  
+  }
+  .settingsModal h3{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .inputCheck{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 95%;
+    margin: 0 auto;
+    gap: 0.3rem;
+    text-align: start;
+  }
+ 
+  .inputCheck label{
+    width: 95%;
+    margin: 0 auto;
+    gap: 0.3rem;
+    display: flex;
+  align-items:center;
+  justify-content: start;
+  text-align: start;
+
+}
+  .inputCheck input{
+    height:1.1rem ;
+    width: 10%;
+    margin-top: 0.5rem;
+  }
+  .inputCheck label:first-child{
+    margin-top: 0rem;
+    margin-left: 0.9rem;
+    gap: 0.6rem;
+  }
+  .buttonContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 10px;
+  }
+  .closeButton {
+    width: 85%;
+    height: 2.4rem;
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 0;
+  }
+  .saveButton{
+    width: 85%;
+    height: 2.4rem;
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 0;
+  }
+  
+}
+@media (min-width:481px) and (max-width:768px){
+  .banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text {
+
+    margin: 0;
+    padding: 0rem;
+    font-size: 1rem;
+  }
+.acceptButton {
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  .acceptButton:hover {
+    background-color: #4CAF50;
+    opacity: 1;
+  }
+  
+  .settingsButton {
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #f44336;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  .settingsButton:hover { 
+    background-color: #f44336;
+    opacity:1;
+  }
+  .settingsModal {
+    width: 95%;
+    font-size: 1rem;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #282c34;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2000; /* Mais alto que o banner */
+   
+  }
+  .settingsModal h3{
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .inputCheck{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 95%;
+    margin: 0 auto;
+    gap: 0.3rem;
+    text-align: start;
+  }
+ 
+  .inputCheck label{
+    width: 95%;
+    margin: 0 auto;
+    gap: 0.3rem;
+    display: flex;
+  align-items:center;
+  justify-content: start;
+  text-align: start;
+
+}
+.inputCheck label:first-child{
+  margin-top: 0rem;
+  margin-left: 1rem;
+  gap: 0.6rem;
+}
+  .inputCheck input{
+    height:1.3rem ;
+    width: 10%;
+    margin-top: 0.5rem;
+  }
+ 
+  .buttonContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 10px;
+  }
+  .closeButton {
+    width: 85%;
+    height: 3rem;
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 0;
+  }
+  .saveButton{
+    width: 85%;
+    height: 3rem;
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 0;
+  }
+  
+}
+@media (min-width:769px) and (max-width:991px){
+  
+.text {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.link {
+  color: rgb(183, 143, 63);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.acceptButton {
+  width: 14.6rem;
+  height: 4rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.acceptButton:hover {
+  background-color: #4CAF50;
+  opacity: 1;
+}
+
+.settingsButton {
+  width: 14.6rem;
+  height: 4rem;
+  background-color: #f44336;
+  color: white;
+  padding: 0rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.settingsButton:hover { 
+  background-color: #f44336;
+  opacity:1;
+}
+.settingsModal {
+  width: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #282c34;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2000; /* Mais alto que o banner */
+
+}
+
+.inputCheck{
+  display: flex;
+  width: 100%;
+}
+.inputCheck label{
+  width: 50%;
+}
+.inputCheck input{
+  height:1.1rem ;
+}
+.settingsModal h3{
+  color: rgb(183, 143, 63);
+}
+ .closeButton {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.saveButton{
+  margin-top: 10px;
+  opacity: 0.8;
+}
+ .closeButton:hover {
+  margin-top: 10px;
+  background-color: rgb(183, 143, 63) ;
+  opacity: 1;
+}
+ .saveButton:hover {
+  margin-top: 10px;
+  background-color: rgb(183, 143, 63) ;
+  opacity: 1;
+}
+}

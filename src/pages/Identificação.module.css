@@ -1,0 +1,1476 @@
+/* ***  */
+.IdentificacaoContent label{
+  font-size: 1.2rem;
+  color:  rgb(183, 143, 63);
+  font-weight: 500;
+  margin-bottom: .5rem;
+ }
+ /* ***  */
+.navIdentificacao{
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navIdentificacao h1{
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  letter-spacing: -2px;
+   font-style:italic;
+  color: rgb(146, 117, 60);
+}
+.IdentificacaoContent{
+  display: flex;
+  width: 100%;
+  background-color: rgba(11, 11, 11, 0.92);
+}
+.cadastroIdentificacao{
+  width: 80%;
+  margin: 1rem 2rem 0 7rem;
+}
+.cadastroIdentificacao h2{
+  font-size: 1.72rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+ font-family: "Bebas Neue", sans-serif;
+}
+.cadastroIdentificacao p{
+  color: rgb(177, 169, 169);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+.ContentIdentificacao{
+  margin-top: 1rem;
+  width: 71%;
+  color: black;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+}
+.ContentIdentificacao label{
+ margin: 0.4rem 0;
+ width: 50%;
+}
+.ContentIdentificacao input{
+  margin: 0.2rem 0;
+  color: black;
+}
+.ContentIdentificacao input::placeholder {
+  color: #d8d2d2; /* Cor do placeholder */
+  opacity: 1;
+}
+.ContentIdentificacao input[type=date]{
+  color: #d8d2d2;
+}
+.ContentIdentificacao select{
+  width: 100%;
+  margin: 0rem 0;
+  background-color: transparent;
+  border: 3px solid rgb(144, 141, 141);
+  color: #d8d2d2;
+  padding: 1rem ;
+}
+.ContentIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+select option {
+  color: #0d0d0d; 
+}
+
+.formIdentificacao{
+  width: 100%;
+ }
+
+ .formIdentificacao input{
+ height: 3.5rem;
+ width: 100%;
+ font-size: 1rem;
+ font-weight: bold;
+ padding: 1rem  2rem  ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0;
+ }
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+
+.InfoCadastro p{
+  width: 70%;
+  font-size: 1rem;
+  text-align:justify;
+  margin: 0.2rem 0 ;
+  
+}
+.btn button{
+  width: 70.5%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(146, 117, 60);;
+  transition: 0.1s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+button:hover{
+ opacity: 1;
+
+}
+.inline{
+  display: flex;
+width: 100%;
+gap: 1rem;
+
+}
+/* INFO PACOTE  */
+.InfoPacote{
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding-left: 2rem;
+
+}
+/* IMG */
+.imgPacote{
+  width: 100%;
+}
+.imgPacote img{
+  width: 30rem;
+  height: 20rem;
+  border-radius: 0.6rem;
+  margin-top: 1rem;
+
+}
+/* INFO  */
+
+
+.InfoPacote h4{ 
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color: rgb(158, 123, 53);
+  font-family: "Bebas Neue", sans-serif;
+}
+.InfoPacote p{
+  font-size: 1.2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0rem 0 1rem 0;
+  color: rgb(177, 169, 169);
+}
+.itemPrice{
+  border-bottom: 1px solid rgb(165, 160, 160);
+  width: 91.5%;
+  display: flex;
+  justify-content: end;
+}
+.itemPrice span{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.8rem 0.9rem 0.8rem 0 ;
+  font-family: "Bebas Neue", sans-serif;
+  
+}
+.itemPrice p{
+  font-size: 1.25rem;
+  color:  rgb(146, 117, 60);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.InfoPacote h2{
+  width: 78%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color:  rgb(146, 117, 60);
+  margin-top: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* INFO ADICIONAIS  */
+.infoAdicionais{
+  max-width: 29rem;
+  overflow-wrap: break-word;
+}
+.infoAdicionais h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color:  rgb(146, 117, 60);
+  font-family: "Bebas Neue", sans-serif;
+}
+.infoAdicionais p{
+  width: 44%;
+  justify-content: flex-end;
+  color:  rgb(146, 117, 60);
+  font-size: 1.3rem;
+}
+.info{
+width: 100%;
+display: flex;
+justify-content: space-between;
+
+}
+.info p:first-child{
+  width: 50%;
+  color: rgb(177, 169, 169);
+  
+}
+.info p:last-child{
+  text-align: end;
+}
+
+/* Identificação.module.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: rgb(232, 228, 228);
+}
+
+.popupContent {
+  width: 30%;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+}
+.popupContent button {
+ width: 40%;
+  margin: 1rem auto;
+}
+.btnPopup{
+  display:flex;
+}
+.btnClose{
+ background-color: rgb(46, 46, 46);
+}
+.sidebar {
+  position: absolute;
+  top: 48%;
+  left: 3%;
+  width: 10%;
+  height: 65rem;
+  background-color:transparent;
+  display: flex;
+ padding-top : 20px; /* Espaçamento inferior para não grudar o texto na borda */
+  writing-mode: vertical-rl; /* Mantém o texto na vertical */
+  transform: rotate(180deg); /* Inverte o texto de baixo para cima */
+  text-orientation: mixed;
+  color: rgb(146, 117, 60);
+  overflow-y: none;
+  justify-content: center;
+}
+
+
+.textContainer {
+  height: 93%; /* Ajuste a altura para caber no seu design */
+  overflow: hidden; /* Impede que o texto que saia do contêiner seja exibido */
+  position: relative; /* Permite que a animação se mova em relação a este contêiner */
+  margin: 0;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.sidebar h2{
+  font-size:2.3rem;
+    text-transform: uppercase;
+    animation: moveUp 20s linear infinite; /* Duração e repetição da animação */
+    position: relative;
+    font-weight: 800;
+}
+@media  (max-width:480px){
+
+.navIdentificacao{
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navIdentificacao h1{
+  margin: 1rem 0;
+  margin-top: 6rem;
+  font-size: 2rem;
+  letter-spacing: -1px;
+   font-style:italic;
+  color: rgb(146, 117, 60);
+}
+.IdentificacaoContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(11, 11, 11, 0.92);
+}
+.cadastroIdentificacao{
+  width: 90%;
+  margin: 1rem auto;
+}
+.cadastroIdentificacao h2{
+  font-size: 1.1rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+ font-family: "Bebas Neue", sans-serif;
+}
+.cadastroIdentificacao p{
+  color: rgb(177, 169, 169);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+.ContentIdentificacao{
+  margin-top: 1rem;
+  width: 100%;
+  color: black;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+}
+.ContentIdentificacao label{
+width: 100%;
+ margin: 0.3rem 0;
+ font-size: 1rem;
+}
+.inline{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.ContentIdentificacao input{
+  margin: 0.5rem 0;
+  color: black;
+}
+
+.ContentIdentificacao select{
+  padding: 1rem;
+  font-size: 0.9;
+}
+.ContentIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+
+.formIdentificacao{
+  width: 100%;
+ }
+
+ .formIdentificacao input{
+ height: 3rem;
+ width: 100%;
+ font-size: 0.9rem;
+ font-weight: bold;
+ padding: 1rem ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0;
+ }
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+
+.InfoCadastro p{
+  width: 100%;
+  font-size: 0.8rem;
+  text-align:justify;
+  margin: 0.2rem 0 ;
+  
+}
+.btn button{
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: rgb(146, 117, 60);;
+  transition: 0.1s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* INFO PACOTE  */
+.InfoPacote{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0;
+
+}
+/* IMG */
+.imgPacote{
+  width: 90%;
+  margin-top: 1rem auto;
+}
+
+.imgPacote img{
+  width: 100%;
+  height: 10%;
+  border-radius: 0.6rem;
+  margin-top: 1rem auto;
+
+}
+/* INFO  */
+
+
+.InfoPacote h4{ 
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color: rgb(158, 123, 53);
+  font-family: "Bebas Neue", sans-serif;
+}
+.InfoPacote p{
+  font-size: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0.2rem 0 1rem 0;
+  color: rgb(177, 169, 169);
+}
+.itemPrice{
+  border-bottom: 1px solid rgb(165, 160, 160);
+  width: 90%;
+  display: flex;
+  justify-content: end;
+}
+.itemPrice span{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.8rem 0.9rem 0.8rem 0 ;
+  font-family: "Bebas Neue", sans-serif;
+  
+}
+.itemPrice p{
+  font-size: 1.1rem;
+  color:  rgb(146, 117, 60);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 0.5rem;
+}
+.InfoPacote h2{
+  width: 90%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color:  rgb(146, 117, 60);
+  margin-top: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* INFO ADICIONAIS  */
+.infoAdicionais{
+  width: 90%;
+}
+.infoAdicionais h2{
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color:  rgb(146, 117, 60);
+  font-family: "Bebas Neue", sans-serif;
+}
+.infoAdicionais p{
+  width: 44%;
+  justify-content: flex-end;
+  color:  rgb(146, 117, 60);
+  font-size: 1.02rem;
+}
+.info{
+width: 100%;
+display: flex;
+justify-content: space-between;
+
+}
+
+
+/* Identificação.module.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: rgb(232, 228, 228);
+}
+
+.popupContent {
+  width: 30%;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+}
+.popupContent button {
+ width: 40%;
+  margin: 1rem auto;
+}
+.btnPopup{
+  display:flex;
+}
+.btnClose{
+ background-color: rgb(46, 46, 46);
+}
+}
+@media (min-width:481px)and (max-width:660px){
+
+.navIdentificacao{
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navIdentificacao h1{
+  margin: 1rem 0;
+  margin-top: 6rem;
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+   font-style:italic;
+  color: rgb(146, 117, 60);
+}
+.IdentificacaoContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(11, 11, 11, 0.92);
+}
+.cadastroIdentificacao{
+  width: 90%;
+  margin: 1rem auto;
+}
+.cadastroIdentificacao h2{
+  font-size: 1.3rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+ font-family: "Bebas Neue", sans-serif;
+}
+.cadastroIdentificacao p{
+  color: rgb(177, 169, 169);
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+.ContentIdentificacao{
+  margin-top: 1rem;
+  width: 100%;
+  color: black;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+  
+}
+.ContentIdentificacao label{
+ margin: 0.3rem 0;
+ font-size: 1.1rem;
+}
+.ContentIdentificacao input{
+  margin: 0.5rem 0;
+  color: black;
+}
+.ContentIdentificacao select{
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.ContentIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+ .ContentIdentificacao select option{
+  background-color: gray;
+}
+.formIdentificacao{
+  width: 100%;
+ }
+
+ .formIdentificacao input{
+ height: 3.2rem;
+ width: 100%;
+ font-size: 0.9rem;
+ font-weight: bold;
+ padding: 1rem  ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0;
+ }
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+
+.InfoCadastro p{
+  width: 100%;
+  font-size: 0.9rem;
+  text-align:justify;
+  margin: 0.2rem 0 ;
+  
+}
+.btn button{
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: rgb(146, 117, 60);;
+  transition: 0.1s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* INFO PACOTE  */
+.InfoPacote{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding-left: 3rem;
+
+}
+/* IMG */
+
+.imgPacote img{
+  width: 90%;
+  height: 10%;
+  border-radius: 0.6rem;
+  margin-top: 1rem;
+
+}
+/* INFO  */
+
+
+.InfoPacote h4{ 
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color: rgb(158, 123, 53);
+  font-family: "Bebas Neue", sans-serif;
+}
+.InfoPacote p{
+  font-size: 1.1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0.2rem 0 1rem 0;
+  color: rgb(177, 169, 169);
+}
+.itemPrice{
+  border-bottom: 1px solid rgb(165, 160, 160);
+  width: 91.5%;
+  display: flex;
+  justify-content: end;
+}
+.itemPrice span{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem 0.9rem 0.8rem 0 ;
+  font-family: "Bebas Neue", sans-serif;
+  
+}
+.itemPrice p{
+  font-size: 1.2rem;
+  color:  rgb(146, 117, 60);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.InfoPacote h2{
+  width: 78%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:  rgb(146, 117, 60);
+  margin-top: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* INFO ADICIONAIS  */
+.infoAdicionais {
+   max-width: 91%; 
+  overflow-wrap: break-word;
+}
+.infoAdicionais h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color:  rgb(146, 117, 60);
+  font-family: "Bebas Neue", sans-serif;
+}
+.infoAdicionais p{
+  width: 44%;
+  justify-content: flex-end;
+  color:  rgb(146, 117, 60);
+  font-size: 1.15rem;
+}
+.info{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+/* Identificação.module.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: rgb(232, 228, 228);
+}
+
+.popupContent {
+  width: 30%;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+}
+.popupContent button {
+ width: 40%;
+  margin: 1rem auto;
+}
+.btnPopup{
+  display:flex;
+}
+.btnClose{
+ background-color: rgb(46, 46, 46);
+}
+}
+@media (min-width:660px)and (max-width:991px){
+
+.navIdentificacao{
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navIdentificacao h1{
+  margin: 1rem 0;
+  margin-top: 6rem;
+  font-size: 2.6rem;
+  letter-spacing: -1px;
+   font-style:italic;
+  color: rgb(146, 117, 60);
+}
+.IdentificacaoContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(11, 11, 11, 0.92);
+}
+.cadastroIdentificacao{
+  width: 90%;
+  margin: 1rem auto;
+}
+.cadastroIdentificacao h2{
+  font-size: 1.4rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+ font-family: "Bebas Neue", sans-serif;
+}
+.cadastroIdentificacao p{
+  color: rgb(177, 169, 169);
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+.ContentIdentificacao{
+  margin-top: 1rem;
+  width: 100%;
+  color: black;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+}
+.ContentIdentificacao label{
+ margin: 0.3rem 0;
+ font-size: 1.2rem;
+}
+.ContentIdentificacao input{
+  margin: 0.5rem 0;
+  color: black;
+}
+
+
+.ContentIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+
+.formIdentificacao{
+  width: 100%;
+ }
+
+ .formIdentificacao input{
+ height: 3.3rem;
+ width: 100%;
+ font-size: 1rem;
+ font-weight: bold;
+ padding: 1rem  2rem  ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0;
+ }
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+
+.InfoCadastro p{
+  width: 100%;
+  font-size: 1rem;
+  text-align:justify;
+  margin: 0.2rem 0 ;
+  
+}
+.btn button{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(146, 117, 60);;
+  transition: 0.1s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* INFO PACOTE  */
+.InfoPacote{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding-left: 3rem;
+
+}
+/* IMG */
+
+.imgPacote img{
+  width: 90%;
+  height: 10%;
+  border-radius: 0.6rem;
+  margin-top: 1rem;
+
+}
+/* INFO  */
+
+
+.InfoPacote h4{ 
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color: rgb(158, 123, 53);
+  font-family: "Bebas Neue", sans-serif;
+}
+.InfoPacote p{
+  font-size: 1.3rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0.2rem 0 1rem 0;
+  color: rgb(177, 169, 169);
+}
+.itemPrice{
+  border-bottom: 1px solid rgb(165, 160, 160);
+  width: 91.5%;
+  display: flex;
+  justify-content: end;
+}
+.itemPrice span{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem 0.9rem 0.8rem 0 ;
+  font-family: "Bebas Neue", sans-serif;
+  
+}
+.itemPrice p{
+  font-size: 1.4rem;
+  color:  rgb(146, 117, 60);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* INFO ADICIONAIS  */
+.infoAdicionais {
+   max-width: 91%; 
+  overflow-wrap: break-word;
+}
+.infoAdicionais h2{
+  font-size: 1.34rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0rem 0;
+  color:  rgb(146, 117, 60);
+  font-family: "Bebas Neue", sans-serif;
+}
+.infoAdicionais p{
+  width: 44%;
+  justify-content: flex-end;
+  color:  rgb(146, 117, 60);
+  font-size: 1.4rem;
+}
+.info{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+/* Identificação.module.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: rgb(232, 228, 228);
+}
+
+.popupContent {
+  width: 30%;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+}
+.popupContent button {
+ width: 40%;
+  margin: 1rem auto;
+}
+.btnPopup{
+  display:flex;
+}
+.btnClose{
+ background-color: rgb(46, 46, 46);
+}
+}
+@media (min-width:992px) and (max-width:1199px){
+
+  .navIdentificacao{
+    width: 100%;
+    height: 24rem;
+    background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navIdentificacao h1{
+    margin: 1rem 0;
+    margin-top: 6rem;
+    font-size: 3.3rem;
+    letter-spacing: -1px;
+     font-style:italic;
+    color: rgb(146, 117, 60);
+  }
+  .IdentificacaoContent{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    background-color: rgba(11, 11, 11, 0.92);
+  }
+  .cadastroIdentificacao{
+    width: 50%;
+    margin: 1rem 1rem 1rem 3.2rem;
+  }
+  .cadastroIdentificacao h2{
+    font-size: 1.4rem;
+    color:  rgb(146, 117, 60);
+    font-weight: 800;
+   font-family: "Bebas Neue", sans-serif;
+  }
+  .cadastroIdentificacao p{
+    color: rgb(177, 169, 169);
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .ContentIdentificacao{
+    margin-top: 1rem;
+    width: 90%;
+    color: black;
+  }
+  .ContentIdentificacao form{
+    margin: 0;
+    color: black;
+  }
+  .ContentIdentificacao label{
+   margin: 0.3rem 0;
+   font-size: 1.1rem;
+  }
+  .ContentIdentificacao input{
+    margin: 0.5rem 0;
+    color: black;
+  }
+  
+  .ContentIdentificacao select{
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .ContentIdentificacao select:valid {
+    color: rgb(0, 0, 0);
+     background-color:rgb(241, 240, 239); 
+   }
+  
+  .formIdentificacao{
+    width: 100%;
+   }
+  
+   .formIdentificacao input{
+   height: 3.3rem;
+   width: 100%;
+   font-size: 0.9rem;
+   font-weight: bold;
+   padding: 1rem  ;
+   color: wheat;
+   background-color: transparent;
+   border: 2px solid rgb(180, 176, 176);
+   border-radius: 0.3rem;
+   margin: 0.2rem 0;
+   }
+   .formIdentificacao input:valid {
+   color: rgb(0, 0, 0);
+    background-color:rgb(241, 240, 239);
+  }
+  
+  .InfoCadastro p{
+    width: 90%;
+    font-size: 1rem;
+    text-align:justify;
+    margin: 0.2rem 0 ;
+    
+  }
+  .btn button{
+    width: 90%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(146, 117, 60);;
+    transition: 0.1s;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  /* INFO PACOTE  */
+  .InfoPacote{
+    width: 43%;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding: 2rem 0 0 3rem;
+
+  }
+  /* IMG */
+  
+  .imgPacote img{
+    width: 90%;
+    height: 10%;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+  
+  }
+  /* INFO  */
+  
+  
+  .InfoPacote h4{ 
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0rem 0;
+    color: rgb(158, 123, 53);
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .InfoPacote p{
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.2rem 0 1rem 0;
+    color: rgb(177, 169, 169);
+  }
+  .itemPrice{
+    border-bottom: 1px solid rgb(165, 160, 160);
+    width: 91.5%;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+  }
+  .itemPrice span{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.8rem 0.9rem 0.8rem 0 ;
+    font-family: "Bebas Neue", sans-serif;
+    
+  }
+  .itemPrice p{
+    font-size: 1.3rem;
+    color:  rgb(146, 117, 60);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  /* INFO ADICIONAIS  */
+  .infoAdicionais {
+     max-width: 91%; 
+    overflow-wrap: break-word;
+  }
+  .infoAdicionais h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0rem 0;
+    color:  rgb(146, 117, 60);
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .infoAdicionais p{
+    width: 44%;
+    justify-content: flex-end;
+    color:  rgb(146, 117, 60);
+    font-size: 1.3rem;
+  }
+  .info{
+  display: flex;
+  justify-content: space-between;
+  
+  }
+  
+  
+  /* Identificação.module.css */
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    color: rgb(232, 228, 228);
+  }
+  
+  .popupContent {
+    width: 30%;
+    background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+    background-position:center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  
+  }
+  .popupContent button {
+   width: 40%;
+    margin: 1rem auto;
+  }
+  .btnPopup{
+    display:flex;
+  }
+  .btnClose{
+   background-color: rgb(46, 46, 46);
+  }
+}
+@media (min-width:1200px) and (max-width:1500px) {
+
+  .navIdentificacao{
+    width: 100%;
+    height: 24rem;
+    background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navIdentificacao h1{
+    margin: 1rem 0;
+    margin-top: 6rem;
+    font-size: 3.8rem;
+    letter-spacing: -1px;
+     font-style:italic;
+    color: rgb(146, 117, 60);
+  }
+  .IdentificacaoContent{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    background-color: rgba(11, 11, 11, 0.92);
+  }
+  .cadastroIdentificacao{
+    width: 50%;
+    margin: 1rem 1rem 1rem 3.2rem;
+  }
+  .cadastroIdentificacao h2{
+    font-size: 1.7rem;
+    color:  rgb(146, 117, 60);
+    font-weight: 800;
+   font-family: "Bebas Neue", sans-serif;
+  }
+  .cadastroIdentificacao p{
+    color: rgb(177, 169, 169);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .ContentIdentificacao{
+    margin-top: 1rem;
+    width: 90%;
+    color: black;
+  }
+  .ContentIdentificacao form{
+    margin: 0;
+    color: black;
+  }
+  .ContentIdentificacao label{
+   margin: 0.3rem 0;
+   font-size: 1.3rem;
+  }
+  .ContentIdentificacao input{
+    margin: 0.5rem 0;
+    color: black;
+  }
+  .ContentIdentificacao select{
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .ContentIdentificacao select:valid {
+    color: rgb(0, 0, 0);
+     background-color:rgb(241, 240, 239); 
+   }
+  
+  .formIdentificacao{
+    width: 100%;
+   }
+  
+   .formIdentificacao input{
+   height: 3.6rem;
+   width: 100%;
+   font-size: 1.2rem;
+   font-weight: bold;
+   padding: 1rem  ;
+   color: wheat;
+   background-color: transparent;
+   border: 2px solid rgb(180, 176, 176);
+   border-radius: 0.3rem;
+   margin: 0.2rem 0;
+   }
+   .formIdentificacao input:valid {
+   color: rgb(0, 0, 0);
+    background-color:rgb(241, 240, 239);
+  }
+  
+  .InfoCadastro p{
+    width: 90%;
+    font-size: 1.2rem;
+    text-align:justify;
+    margin: 0.2rem 0 ;
+    
+  }
+  .btn button{
+    width: 90%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(146, 117, 60);;
+    transition: 0.1s;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  /* INFO PACOTE  */
+  .InfoPacote{
+    width: 45%;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding: 2rem 0 0 3rem;
+
+  }
+  /* IMG */
+  
+  .imgPacote img{
+    width: 90%;
+    height: 10%;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+  
+  }
+  /* INFO  */
+  
+  
+  .InfoPacote h4{ 
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0rem 0;
+    color: rgb(158, 123, 53);
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .InfoPacote p{
+    font-size: 1.4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.2rem 0 1rem 0;
+    color: rgb(177, 169, 169);
+  }
+  .itemPrice{
+    border-bottom: 1px solid rgb(165, 160, 160);
+    width: 91.5%;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+  }
+  .itemPrice span{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.8rem 0.9rem 0.8rem 0 ;
+    font-family: "Bebas Neue", sans-serif;
+    
+  }
+  .itemPrice p{
+    font-size: 1.4rem;
+    color:  rgb(146, 117, 60);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  /* INFO ADICIONAIS  */
+  .infoAdicionais {
+     max-width: 91%; 
+    overflow-wrap: break-word;
+  }
+  .infoAdicionais h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0rem 0;
+    color:  rgb(146, 117, 60);
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .infoAdicionais p{
+    width: 44%;
+    justify-content: flex-end;
+    color:  rgb(146, 117, 60);
+    font-size: 1.4rem;
+  }
+  .info{
+  display: flex;
+  justify-content: space-between;
+  
+  }
+  
+  
+  /* Identificação.module.css */
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    color: rgb(232, 228, 228);
+  }
+  
+  .popupContent {
+    width: 30%;
+    background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+    background-position:center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  
+  }
+  .popupContent button {
+   width: 40%;
+    margin: 1rem auto;
+  }
+  .btnPopup{
+    display:flex;
+  }
+  .btnClose{
+   background-color: rgb(46, 46, 46);
+  }
+}
