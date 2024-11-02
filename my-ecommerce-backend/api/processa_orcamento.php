@@ -1,14 +1,19 @@
 <?php
+require_once __DIR__ . '/../vendor/autoload.php';
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
 header("Content-Type: application/json; charset=UTF-8");
 
-$servername = "localhost";
-$username = "vincciBD";
-$password = "v*incci***P*u**B2024";
-$dbname = "vinccipub";
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+$servername = $_ENV['DB_HOST'];
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASS'];
+$dbname = $_ENV['DB_NAME'];
+
 
 // Conectar ao banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);

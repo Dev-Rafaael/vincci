@@ -1,21 +1,23 @@
 <?php
+require_once __DIR__ . '/../vendor/autoload.php';
 header("Access-Control-Allow-Origin: http://localhost:5173");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
-
+header("Content-Type: application/json; charset=UTF-8");
 // Verifica se a requisição é do tipo OPTIONS e responde com o status 200
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit;
 }
 
-// Definir o tipo de resposta como JSON
-header("Content-Type: application/json; charset=UTF-8");
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 
-$servername = "localhost";
-$username = "vincciBD";
-$password = "v*incci***P*u**B2024";
-$dbname = "vinccipub";
+$servername = $_ENV['DB_HOST'];
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASS'];
+$dbname = $_ENV['DB_NAME'];
+
 
 // Conectar ao banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);
